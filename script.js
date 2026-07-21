@@ -58,8 +58,8 @@ anymore from the 7th of September.. bus kabhi kabhara ake korea ke cherry blosso
 bheja karunga tm logo ko😝 That's why I pinged you & pali yesterday ke if you want toh you 
 can take away my mod perms, you can.. I'll send a goodbye text, & agar chaho toh rakh bhi 
 sakte ho.. However, wo sab chhoro, what was I saying? Oh ha, so life ke chapter changes & 
-people move on but isi ke bich, some people somehow become a part of your memories without 
-you even realizing it. And you're one of those people. 
+people move on but isi ke bich, some people somehow become a part of your memories 
+without you even realizing it. And you're one of those people. 
 
 So... Thank you for putting up with my nonsense, for bearing with my broken urdu, and for
 making me laugh, queenz.. I'm promising one thing ke the bond ain't ending here.. I wasn't 
