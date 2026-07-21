@@ -182,7 +182,7 @@ image:"assets/screenshots/05-spelling-errors.jpeg"
 {
 title:"Coffee Obsession",
 
-text:"Wo Queenz hi kiya jo coffee ki lalaj me gussa bhul jaye☕",
+text:"Wo Queenz hi kiya jo coffee ki lalaj me gussa na bhul jaye☕",
 
 image:"assets/screenshots/06-coffee-obsession.jpeg"
 },
