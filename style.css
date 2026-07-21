@@ -1,0 +1,521 @@
+/* =======================================
+   RESET
+======================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =======================================
+   BODY
+======================================= */
+
+body{
+
+    height:100vh;
+
+    overflow:hidden;
+
+    font-family:"Segoe UI",sans-serif;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #020617,
+        #081229,
+        #111827
+    );
+
+}
+
+/* =======================================
+   STARS
+======================================= */
+
+#stars{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:0;
+
+    overflow:hidden;
+
+}
+
+.star{
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:50%;
+
+    animation:twinkle linear infinite;
+
+}
+
+/* =======================================
+   SHOOTING STARS
+======================================= */
+
+#shooting-stars{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:1;
+
+}
+
+.shooting-star{
+
+    position:absolute;
+
+    width:140px;
+
+    height:2px;
+
+    background:
+    linear-gradient(
+        90deg,
+        white,
+        transparent
+    );
+
+    transform:rotate(-45deg);
+
+    animation:shoot 1.4s linear forwards;
+
+}
+
+/* =======================================
+   SCREEN
+======================================= */
+
+.screen{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:10;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+/* Hidden screens */
+
+.hiddenScreen{
+
+    display:none;
+
+}
+
+/* =======================================
+   LANDING
+======================================= */
+
+#title{
+
+    font-size:58px;
+
+    font-weight:300;
+
+    margin-bottom:20px;
+
+}
+
+#subtitle{
+
+    font-size:24px;
+
+    opacity:.85;
+
+    margin-bottom:45px;
+
+}
+
+/* =======================================
+   BUTTON
+======================================= */
+
+button{
+
+    padding:16px 42px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:scale(1.07);
+
+}
+
+/* =======================================
+   MEMORY
+======================================= */
+
+#memoryTitle{
+
+    font-size:44px;
+
+    font-weight:300;
+
+    margin-bottom:20px;
+
+}
+
+#memoryText{
+
+    font-size:20px;
+
+    max-width:760px;
+
+    line-height:1.7;
+
+    opacity:.9;
+
+    margin-bottom:28px;
+
+}
+
+#memoryImage{
+
+    width:auto;
+
+    max-width:82vw;
+
+    max-height:58vh;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 0 30px rgba(255,255,255,.18);
+
+    margin-bottom:30px;
+
+}
+
+.navButtons{
+
+    display:flex;
+
+    gap:22px;
+
+}
+
+/* =======================================
+   FINAL SCREEN
+======================================= */
+
+#finalText{
+
+    font-size:56px;
+
+    font-weight:300;
+
+    min-height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+#finalPhoto{
+
+    width:290px;
+
+    height:290px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid white;
+
+    box-shadow:
+
+    0 0 25px white,
+
+    0 0 60px rgba(255,255,255,.35);
+
+    margin:30px 0;
+
+    opacity:0;
+
+    display:none;
+
+}
+
+#birthdayText{
+
+    font-size:58px;
+
+    font-weight:300;
+
+    line-height:1.2;
+
+    margin-bottom:35px;
+
+    opacity:0;
+
+    display:none;
+
+}
+
+#letterBtn{
+
+    opacity:0;
+
+    display:none;
+
+}
+
+/* =======================================
+   LETTER
+======================================= */
+
+#letterOverlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(8px);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+#letterCard{
+
+    width:min(850px,90vw);
+
+    max-height:82vh;
+
+    overflow-y:auto;
+
+    background:#f7f1e5;
+
+    color:#333;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    position:relative;
+
+    line-height:1.9;
+
+}
+
+#closeLetter{
+
+    position:absolute;
+
+    right:20px;
+
+    top:20px;
+
+    padding:10px 15px;
+
+}
+
+#letterCard h2{
+
+    margin-bottom:30px;
+
+}
+
+#letterContent{
+
+    white-space:pre-line;
+
+    font-size:18px;
+
+}
+
+/* =======================================
+   HELPERS
+======================================= */
+
+.visible{
+
+    opacity:1 !important;
+
+    transition:opacity 1.4s ease;
+
+}
+
+.fade-out{
+
+    animation:fadeOut 1.3s forwards;
+
+}
+
+.fade-in{
+
+    animation:fadeIn 1.3s forwards;
+
+}
+
+/* =======================================
+   KEYFRAMES
+======================================= */
+
+@keyframes twinkle{
+
+    0%{opacity:.2;}
+
+    50%{opacity:1;}
+
+    100%{opacity:.2;}
+
+}
+
+@keyframes shoot{
+
+    from{
+
+        opacity:1;
+
+        transform:
+        translate(0,0)
+        rotate(-45deg);
+
+    }
+
+    to{
+
+        opacity:0;
+
+        transform:
+        translate(700px,700px)
+        rotate(-45deg);
+
+    }
+
+}
+
+@keyframes fadeOut{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ===========================
+   Whole Scene Fade
+=========================== */
+
+.sceneFadeOut{
+
+    animation:sceneFadeOut 3.5s forwards;
+
+}
+
+.sceneFadeIn{
+
+    animation:sceneFadeIn 4s forwards;
+
+}
+
+@keyframes sceneFadeOut{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes sceneFadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}

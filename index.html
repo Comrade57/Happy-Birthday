@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>A Sky Full of Memories</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Animated Background -->
+    <!-- ========================= -->
+
+    <div id="stars"></div>
+
+    <div id="shooting-stars"></div>
+
+
+    <!-- ========================= -->
+    <!-- Landing Screen -->
+    <!-- ========================= -->
+
+    <div id="landing" class="screen">
+
+        <h1 id="title">
+
+            Every star tells a story...
+
+        </h1>
+
+        <p id="subtitle">
+
+            And this one tells ours.
+
+        </p>
+
+        <button id="startBtn">
+
+            Begin
+
+        </button>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Memory Screen -->
+    <!-- ========================= -->
+
+    <div id="memoryScreen"
+         class="screen hiddenScreen">
+
+        <h2 id="memoryTitle"></h2>
+
+        <p id="memoryText"></p>
+
+        <img
+            id="memoryImage"
+            src=""
+            alt="Memory">
+
+        <div class="navButtons">
+
+            <button id="prevBtn">
+
+                ← Previous
+
+            </button>
+
+            <button id="nextBtn">
+
+                Next →
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Final Reveal -->
+    <!-- ========================= -->
+
+    <div id="finalScreen"
+         class="screen hiddenScreen">
+
+        <h1 id="finalText">
+
+        </h1>
+
+        <img
+            id="finalPhoto"
+            src="assets/images/cutie.png"
+            alt="Cutie">
+
+        <h1 id="birthdayText">
+
+            HAPPY BIRTHDAY
+
+            <br>
+
+             CUTIEEEEEEE!!!
+
+        </h1>
+
+        <button id="letterBtn">
+
+            💌 Click Here!
+
+        </button>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Letter -->
+    <!-- ========================= -->
+
+    <div id="letterOverlay">
+
+        <div id="letterCard">
+
+            <button id="closeLetter">
+
+                ✕
+
+            </button>
+
+            <h2>
+
+                Queenzzzzz,
+
+            </h2>
+
+            <div id="letterContent">
+
+                <!-- we'll paste the letter here later -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Music -->
+    <!-- ========================= -->
+
+    <audio id="bgMusic"
+           preload="auto">
+
+        <source
+            src="assets/music/Hum.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
